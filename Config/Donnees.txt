@@ -1,0 +1,3 @@
+id=2,tempsArrivee=10,priorite=3,tempsExecution=5,evenements=LECTURE:2,ECRITURE:3,DORMIR:1
+id=1,tempsArrivee=2,priorite=20,tempsExecution=1,evenements=CALCUL:4,FIN:1
+id=3,tempsArrivee=4,priorite=1,tempsExecution=10,evenements=LECTURE:3,ECRITURE:2,DORMIR:2,FIN:1
