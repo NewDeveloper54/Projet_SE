@@ -1,5 +1,7 @@
 package org.example;
 
+
+
 import java.util.Queue;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -20,5 +22,7 @@ System.out.println("Configuration chargée !");
         Simulation simulation= new Simulation(processuses, config1, scheduler);
         simulation.executer();
         simulation.afficherResultat();
+
+
     }
 }

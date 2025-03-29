@@ -24,6 +24,7 @@ while (!processuses.isEmpty()){
          System.out.println("aucun processus identifie");
          break;
      }
+
      p.etat="EN COURS";
 System.out.println("processus en cours: "+p.id+" avec la priorite: "+p.priorite);
  tempsSimulation+=p.tempsExecution;
