@@ -11,11 +11,11 @@ public class JASE {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
-Config config1 =Config.chargerConfig("Config/Config.txt");
+Config config1 =Config.chargerConfig("src/main/Config/Config.txt");
 System.out.println("Configuration chargée !");
 
 
-        Queue<Processus> processuses = DonneesChargeur.chargerProcessus("Config/Donnees.txt");
+        Queue<Processus> processuses = DonneesChargeur.chargerProcessus("src/main/Config/Donnees.txt");
         System.out.println("processus charge");
 
         Scheduler scheduler=new Scheduler();

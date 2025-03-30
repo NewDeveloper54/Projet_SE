@@ -1,0 +1,13 @@
+tempsSimulation=1000
+tempsEcritureDisque=5
+tempsChargePage=10
+interruptionHorloge=50
+processusOrdonnancement=FIFO
+processusQuantum=10
+paginationPolitiqueAllocation=locale
+paginationNombreCadresLocaux=4
+paginationNombreCadres=16
+paginationAlgorithme=LRU
+disqueOrdonnancement=SCAN
+disquePositionInitiale=20
+disqueDirectionInitiale=haut
