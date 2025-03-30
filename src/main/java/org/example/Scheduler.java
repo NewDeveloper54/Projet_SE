@@ -13,23 +13,23 @@ public class Scheduler {
             return p.poll();
         } else if (politiqueOrdonnancement.equals("tourniquet")) {
             Processus processus = p.poll();
-            int quantum = config.processusQuantum;  // Récupère le quantum
+            int quantum = config.processusQuantum;  
 
             if (processus != null && processus.tempsArrivee <= tempsActuelSimulation) {
-                // Appliquer le quantum
+                // on va appliue le quantum
                 if (processus.tempsExecution > quantum) {
-                    // Si le processus n'est pas terminé après le quantum, le remettre dans la queue
+                    // Si le processus n'est pas terminé ,on va le remettre dans la queue
                     processus.tempsExecution -= quantum;
                     p.offer(processus);
                     System.out.println("Processus " + processus.id + " a été interrompu après " + quantum + " unités de temps");
                 } else {
-                    // Si le processus est terminé
+                    
                     System.out.println("Processus " + processus.id + " terminé après " + processus.tempsExecution + " unités de temps");
                     processus.tempsExecution = 0;
                 }
                 return processus;
             } else {
-                // Si le processus n'est pas encore arrivé, le remettre en queue
+                // Si le processus n'est pas encore arrivé, on va le remettre en queue
                 p.offer(processus);
             }
         } else if (politiqueOrdonnancement.equals("par-priorites")) {
